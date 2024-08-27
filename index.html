@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamifyCat</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+     <link rel="shortcut icon" href="https://gamifycat.io/wp-content/themes/gamifycat/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="loader">
+            <svg width="84" height="83" viewBox="0 0 78 76" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="texture" patternUnits="userSpaceOnUse" width="10" height="10">
+                        <circle cx="1" cy="1" r="1" fill="white" opacity="0.5" />
+                    </pattern>
+                    <filter id="rough" x="0" y="0">
+                        <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" result="noise" />
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+                    </filter>
+                </defs>
+                <path
+                    d="M75 30.4967V38.2828C75 42.8434 74.205 48.0854 72.6278 52.9826C71.0689 57.823 68.5876 62.7746 64.9551 66.3275C58.199 72.8628 49.516 76 39.3593 76C28.1496 76 18.5967 72.394 11.1218 65.0026C3.71136 57.675 0 48.5678 0 38C0 27.5136 3.63408 18.4507 10.9019 11.1232C18.2733 3.69274 27.5706 0 38.4297 0C45.0817 0 51.2896 1.58371 56.957 4.77327C62.6396 7.93645 67.1164 12.2257 70.2522 17.6339L73.4599 23.1662L61.9101 26.22L60.0305 22.8745C58.1319 19.4953 55.3763 17.0777 51.2522 14.794L51.2303 14.7819L51.2086 14.7696C47.3342 12.5731 43.1066 11.4666 38.4297 11.4666C30.567 11.4666 24.3145 14.0282 19.2985 19.0859C14.2952 24.1922 11.7822 30.392 11.7822 38C11.7822 45.5767 14.3343 51.7651 19.4485 56.878C24.5616 61.9297 31.0628 64.5334 39.3593 64.5334C46.7056 64.5334 52.2915 62.3831 56.563 58.3613C58.3894 56.6129 60.0839 53.5588 61.3429 49.7039C61.8156 48.2563 62.2032 46.7686 62.506 45.3008L53.3127 47.5535L43.7361 45.0289V53.698H32.4456V30.4967L53.7228 35.7745L75 30.4967Z"
+                    fill="#5DC863" filter="url(#rough)" />
+            </svg>
+        </div>
+        <span id="loading-percentage">0%</span>
+    </div>
+
+    <div id="noise"></div>
+
+    <!---------------------------------------------- NAVBAR ------------------------------------------------------------>
+    <div id="header">
+        <div id="nav-left">
+            <img src="assets/images/gamify-logo.png" alt="">
+            <h2 id="gamifycat-heading">GamifyCat</h2>
+        </div>
+        <div id="nav-right">
+            <h3><a href="#">Discuss Project <span><img src="assets/images/right-arrow.png" alt=""></span></a></h3>
+            <img id="menu-logo" src="assets/images/menu.png" alt="">
+            <img id="close-logo" src="assets/images/close.png" alt="">
+        </div>
+    </div>
+    <div id="menu-scr-overlay">
+        <div id="menu-overlay">
+            <div id="menu-headings">
+                <h2>Home</h2>
+                <h2>Agency</h2>
+                <h2>Cases</h2>
+                <h2>Contact</h2>
+            </div>
+            <div id="menu-bottom-links">
+                <a class="address" href="#">102 Waterback CT SO,<br> Karachi, Sindh, Pakistan, T7P1Z3</a>
+                <a class="phone" href="#">92352138103</a>
+                <a class="mail" href="mailto:hello@gamifycat.io" target="_blank">hello@gamifycat.io</a>
+            </div>
+            <div id="menu-bottom-icons">
+                <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/linkedin-black.svg" alt="">
+                <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/googleicon.svg" alt="">
+                <img src="	https://gamifycat.io/wp-content/themes/gamifycat/img/clutchicon.svg
+                " alt="">
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------- MAIN CONTENT --------------------------------------------------->
+    <div id="wrapper">
+
+        <!--------------------------------------------- SECTION 1 ------------------------------------------------------>
+
+        <div id="section1">
+            <div id="headings">
+                <div class="gradient-text" id="heading1">Gamified</div>
+                <div id="heading2">Digital</div>
+                <div id="heading3">Products</div>
+            </div>
+            <div id="paragraph1">
+                Web Design & Development gamified products like mini-games, interactive <br> landings and puzzles for
+                advertising agencies and brands
+            </div>
+            <div id="cases-button">
+                <h3><a href="#">Our cases <span><img src="assets/images/right-arrow.png" alt=""></span></a></h3>
+            </div>
+            <div id="hero1"></div>
+            <div id="hero2"></div>
+
+            <div id="cart-img">
+                <div id="cart-img-left">
+                    <div class="cart" id="cart1"><img
+                            src="https://gamifycat.io/wp-content/themes/gamifycat/cartridge/Cartridge_Vodafone.webp"
+                            alt="">
+                    </div>
+                    <div class="cart" id="cart2"><img
+                            src="https://gamifycat.io/wp-content/themes/gamifycat/cartridge/Cartridge_North.webp"
+                            alt="">
+                    </div>
+                    <div class="cart" id="cart3"><img
+                            src="https://gamifycat.io/wp-content/themes/gamifycat/cartridge/Cartridge_Asus.webp" alt="">
+                    </div>
+                </div>
+                <div id="cart-img-right">
+                    <div class="cart" id="cart4"><img
+                            src="https://gamifycat.io/wp-content/themes/gamifycat/cartridge/Cartridge_Garnier.webp"
+                            alt="">
+                    </div>
+                    <div class="cart" id="cart5"><img
+                            src="https://gamifycat.io/wp-content/themes/gamifycat/cartridge/Cartridge_Samsung.webp"
+                            alt="">
+                    </div>
+                    <div class="cart" id="cart6"><img
+                            src="https://gamifycat.io/wp-content/themes/gamifycat/cartridge/Cartridge_Dartmouth.webp"
+                            alt="">
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+
+        <!-------------------------------------------- SECTION 2 ------------------------------------------------------->
+
+        <div id="section2">
+            <div id="heading2" class="fade-in">
+                <div id="heading2-left">
+                    <h2 class="green">Successful</h2>
+                    <h2>Projects</h2>
+                </div>
+                <div id="heading2-right">
+                    Explore our diverse cases, featuring immersive mini-games, animated gamification, and interactive
+                    quizzes.
+                </div>
+            </div>
+
+            <!------------------------------------ ELEMENTS DISPLAY ---------------------------------------------------->
+            <div id="s2-content">
+                <div id="samsung-disp" class="fade-in">
+                    <video src="assets/videos/samsung-v1.mp4" class="video-element" loop muted autoplay></video>
+                    <div id="disp-buttons">
+                        <div id="disp-buttons-left">
+                            <a href="#">Animation</a>
+                            <a href="#">Web Design & Development</a>
+                        </div>
+                        <div id="disp-buttons-right">
+                            <div class="arrow-circle1"><img src="assets/images/right-arrow.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="item" class="fade-in">
+                        <div class="item-title">
+                            <h3>Samsung</h3>
+                        </div>
+                        <div class="description fade-in">
+                            <p>Collaborative advertising campaign for the new Samsung S21 Ultra smartphone on the
+                                Forbes business magazine platform, the Samsung brand increased smartphone sales and
+                                received many positive mentions on social media.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="asus-zenbook" class="fade-in">
+                    <div id="image">
+                        <img src="https://gamifycat.io/wp-content/uploads/2023/12/Cartridge_Asus.webp" alt="">
+                    </div>
+                    <div id="disp-buttons">
+                        <div id="disp-buttons-left">
+                            <a href="#">Game Design</a>
+                            <a href="#">Web Design & Development</a>
+                        </div>
+                        <div id="disp-buttons-right">
+                            <div class="arrow-circle2"><img src="assets/images/right-arrow.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div id="aitem" class="item fade-in">
+                        <div class="item-title">
+                            <h3>Asus ZenBook</h3>
+                        </div>
+                        <div class="description fade-in">
+                            <p>Developed an animated landing page and a Unity pixel adventure game for the Asus
+                                ZenBook 14. The game featured tasks that rewarded users with promo codes, boosting
+                                engagement and sales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------------------------------------------------------------------------------------------------->
+
+            <div id="s2-content-2">
+                <div id="dartmouth-disp" class="fade-in">
+                    <video src="assets/videos/dartmouth.mp4" class="video-element" loop muted autoplay></video>
+                    <div id="disp-buttons">
+                        <div id="disp-buttons-left">
+                            <a href="#">APP Design</a>
+                            <a href="#">AR</a>
+                            <a href="#">UX/UI</a>
+                        </div>
+                        <div id="disp-buttons-right">
+                            <div class="arrow-circle1"><img src="assets/images/right-arrow.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="item fade-in" >
+                        <div class="item-title">
+                            <h3>Dartmouth College</h3>
+                        </div>
+                        <div class="description fade-in">
+                            <p>Developed an AR app for the Hood Art Museum at Dartmouth College, allowing visitors to
+                                access detailed information about exhibits by pointing their smartphones at the
+                                artwork. </p>
+                        </div>
+                    </div>
+                    <div id="s2-button" class="fade-in">
+                        <h3><a href="#">See all case studies <span><img src="assets/images/right-arrow.png"
+                                        alt=""></span></a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------------- SECTION 3 ------------------------------------------------------->
+        <div id="section3">
+            <div id="s3-left" class="fade-in">
+                <div id="b1">
+                    <h2>We're trustworthy</h2>
+                    <p>Trusted by over 100 advertising agencies, companies, media digital <br> magazines and brands</p>
+                    <div id="s3-button" class="fade-in">
+                        <h3><a href="#">About us <span><img src="assets/images/right-arrow.png" alt=""></span></a></h3>
+                    </div>
+                </div>
+            </div>
+            <div id="s3-right">
+                <div class="slider">
+                    <div class="slider-track">
+                        <div class="cont">
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/samsung.svg"
+                                    alt="Logo 1"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/predator.svg"
+                                    alt="Logo 2"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/garnier.svg"
+                                    alt="Logo 3"></div>
+                        </div>
+
+                        <div class="cont">
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/balancy.svg"
+                                    alt="Logo 4"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/acer.svg"
+                                    alt="Logo 5"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/aorus.svg"
+                                    alt="Logo 6"></div>
+                        </div>
+
+                        <div class="cont">
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/jbl.svg"
+                                    alt="Logo 7"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/honor.svg"
+                                    alt="Logo 8"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/pringles.svg"
+                                    alt="Logo 9"></div>
+                        </div>
+
+
+                        <div class="cont">
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/cloutboost.svg"
+                                    alt="Logo 10"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/forbes.svg"
+                                    alt="Logo 11"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/lg.svg"
+                                    alt="Logo 12"></div>
+                        </div>
+
+
+                        <div class="cont">
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/societe.svg"
+                                    alt="Logo 13"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/vilebrequin.svg"
+                                    alt="Logo 14"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/menhealth.svg"
+                                    alt="Logo 15"></div>
+                        </div>
+
+
+                        <div class="cont">
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/kosmos.svg"
+                                    alt="Logo 16"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/dartmouth.svg"
+                                    alt="Logo 17"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/timbergate.svg"
+                                    alt="Logo 18"></div>
+                        </div>
+
+
+                        <div class="cont">
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/my-games.svg"
+                                    alt="Logo 19"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/mastercard.svg"
+                                    alt="Logo 20"></div>
+                            <div class="slide"><img
+                                    src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/tele2.svg"
+                                    alt="Logo 21"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------------------------------------- SECTION 4 ------------------------------------------------------->
+        <div id="section4">
+            <div id="s4-heading" class="fade-in">
+                <h1>Expertise</h1>
+            </div>
+
+            <div class="s4-content">
+                <div class="content fade-in" id="c1">
+                    <h2>Design</h2>
+                    <ul>
+                        <li>Logo,Branding,Icons</li>
+                        <li>Custom Illustrations</li>
+                        <li>User Experience (UX)</li>
+                        <li>User Interface (UI)</li>
+                        <li>Web & Product Design</li>
+                    </ul>
+                </div>
+                <div class="content fade-in" id="c2">
+                    <h2>Development</h2>
+                    <ul>
+                        <li>Js,Vue,React,Angular</li>
+                        <li>Web Development</li>
+                        <li>App Development</li>
+                        <li>Wordpress,Webflow</li>
+                        <li>Shopify,BigCommerce</li>
+                    </ul>
+                </div>
+                <div class="content fade-in" id="c3" class="fade-in">
+                    <h2>Marketing</h2>
+                    <ul>
+                        <li>PPC, SEO & SMM</li>
+                        <li>Content Marketing</li>
+                        <li>Email Marketing</li>
+                        <li>Marketing Research</li>
+                        <li>Web & Game Analytics</li>
+                    </ul>
+                </div>
+                <div class="content fade-in" id="c4" class="fade-in">
+                    <h2>Gamification</h2>
+                    <ul>
+                        <li>Interactive ADs Banners</li>
+                        <li>Animated Landing Page</li>
+                        <li>Gamification Web Design</li>
+                        <li>Game Design & Development</li>
+                        <li>HTML5 & Unity Game Development</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-------------------------------------------- SECTION 5------------------------------------------------------->
+        <div id="section5">
+            <div id="s5-heading" class="fade-in">
+                <h1>Positive</h1>
+                <h1>feelings</h1>
+            </div>
+            <div id="s5-slider" class="fade-in">
+                <div id="s5-container">
+
+                    <div class="s5-box" id="s5-b1">
+                        <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/forbes.svg" alt="">
+                        <p>The company demonstrates strong professionalism, particularly in digital design, consistently
+                            delivering projects on schedule. As a key member of our team, GamifyCat adapts to new
+                            creative concepts seamlessly, ensuring each special project is uniquely crafted and
+                            executed. </p>
+                    </div>
+
+                    <div class="s5-box" id="s5-b2">
+                        <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/dartmouthlong.svg"
+                            alt="">
+                        <p>We had the pleasure of collaborating with GamifyCat for approximately 3 years, where Boris
+                            led the project and his team in developing an augmented reality venture spanning several
+                            departments at Dartmouth. GamifyCat proved to be an exceptional entity under Boris's
+                            leadership, showcasing reliability, creativity, and professionalism throughout our
+                            collaboration. </p>
+                    </div>
+
+                    <div class="s5-box" id="s5-b3">
+                        <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/menhealth.svg"
+                            alt="">
+                        <p>Thanks to GamifyCat’s work, the client’s customer gained new patrons. This resulted in an
+                            increase in sales for the customer. The team managed the project well by ensuring the design
+                            and development phases were completed on time and with high quality. Moreover, they had
+                            great communication skills. </p>
+                    </div>
+
+                    <div class="s5-box" id="s5-b4">
+                        <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/arbeidsadvocaat.svg
+                        " alt="">
+                        <p>I recently had the pleasure of working with GamifyCat on the branding of my project. After
+                            several frustrating experiences with other designers, I can safely say that Boris' work was
+                            a breath of fresh air. From the very beginning it seemed like he understood my vision
+                            perfectly, and his design was accurate from the start.</p>
+                    </div>
+
+                    <div class="s5-box" id="s5-b5">
+                        <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/my-games.svg
+                        " alt="">
+                        <p>More than 15 successfully implemented projects stand as a testament to GamifyCat's prowess.
+                            Under the adept guidance of project leader Boris and his skilled team, the company
+                            consistently showcases outstanding expertise and extensive experience in their field. </p>
+                    </div>
+
+
+
+                    <div class="s5-box" id="s5-b1">
+                        <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/forbes.svg" alt="">
+                        <p>The company demonstrates strong professionalism, particularly in digital design, consistently
+                            delivering projects on schedule. As a key member of our team, GamifyCat adapts to new
+                            creative concepts seamlessly, ensuring each special project is uniquely crafted and
+                            executed. </p>
+                    </div>
+
+                    <div class="s5-box" id="s5-b2">
+                        <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/dartmouthlong.svg"
+                            alt="">
+                        <p>We had the pleasure of collaborating with GamifyCat for approximately 3 years, where Boris
+                            led the project and his team in developing an augmented reality venture spanning several
+                            departments at Dartmouth. GamifyCat proved to be an exceptional entity under Boris's
+                            leadership, showcasing reliability, creativity, and professionalism throughout our
+                            collaboration. </p>
+                    </div>
+
+                    <div class="s5-box" id="s5-b3">
+                        <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/menhealth.svg"
+                            alt="">
+                        <p>Thanks to GamifyCat’s work, the client’s customer gained new patrons. This resulted in an
+                            increase in sales for the customer. The team managed the project well by ensuring the design
+                            and development phases were completed on time and with high quality. Moreover, they had
+                            great communication skills. </p>
+                    </div>
+
+                    <div class="s5-box" id="s5-b4">
+                        <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/arbeidsadvocaat.svg
+                        " alt="">
+                        <p>I recently had the pleasure of working with GamifyCat on the branding of my project. After
+                            several frustrating experiences with other designers, I can safely say that Boris' work was
+                            a breath of fresh air. From the very beginning it seemed like he understood my vision
+                            perfectly, and his design was accurate from the start.</p>
+                    </div>
+
+                    <div class="s5-box" id="s5-b5">
+                        <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/logo-clients/my-games.svg
+                        " alt="">
+                        <p>More than 15 successfully implemented projects stand as a testament to GamifyCat's prowess.
+                            Under the adept guidance of project leader Boris and his skilled team, the company
+                            consistently showcases outstanding expertise and extensive experience in their field. </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------------------------------------- FOOTER ------------------------------------------------------->
+        <div id="footer">
+            <div class="footer-cont" class="fade-in">
+                <div id="footer-b1">
+                    <div id="foot-top">
+                        <h1>Let's talk</h1>
+                        <p>hello@gamifycat.io</p>
+                    </div>
+
+                    <div id="foot-bottom">
+                        <p>CANADA</p>
+                        <p>108 Waterfront CT SW,Calgary,AB,T2PK17</p>
+                    </div>
+                </div>
+
+                <div id="footer-b2">
+                    <div id="foot2">
+
+                        <div id="foot2-top">
+                            <p>MENU</p>
+                            <div id="foot-menu">
+                                <p>Agency</p>
+                                <p>Cases</p>
+                                <p>Contacts</p>
+                                <p>Terms And Conditions</p>
+                                <p>Privacy Policy</p>
+                            </div>
+                        </div>
+
+                        <div id="foot2-bottom">
+                            <p>LINK</p>
+                            <div id="foot-links">
+                                <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/linkedin.svg" alt="">
+                                <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/clutchicon_white.svg"
+                                    alt="">
+                                <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/googleicon_white.svg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-b3">
+                    <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/clutchbadge.svg" alt="">
+                    <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/clutchreview.svg" alt="">
+                    <img src="https://gamifycat.io/wp-content/themes/gamifycat/img/googlereview.svg" alt="">
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="footer2">
+                <p>&copy;2024 GamifyCat</p>
+                <p>Muhammad Izhan Waheed</p>
+                <p>Karachi,Sindh,Pakistan</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
